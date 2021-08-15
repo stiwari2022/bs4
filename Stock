@@ -8,7 +8,7 @@ try:
 except:
   print("Error opening the URL")
 src=page.text
-soup = bs4.BeautifulSoup(src,"html.parser")
+soup=bs4.BeautifulSoup(src,"html.parser")
 m=soup.find_all('div',{'class': 'My(6px) Pos(r) smartphone_Mt(6px)'})[0]
 m1=m.find('span')
 price=m1.text
